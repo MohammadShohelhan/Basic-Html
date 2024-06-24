@@ -1,155 +1,281 @@
 <!doctype html>
 <html lang="en">
   <head>
+
+<!-- meta tag are here -->
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="portfolio, HTML, Shohel Alom">
+    <meta name="description" content="Shohel Alom is a developer">
+    <meta name="author" content="Shohel Tanvir">
+<!-- meta tag are here -->
+
+
+
+
+<!-- remix icon cdn -->
+<link
+href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+rel="stylesheet"
+/><!-- remix icon cdn -->
+
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- google font -->
+
+
+    <title>portfolio website website</title>
+
+    <style>
+      body{
+        font-family: "Roboto", sans-serif;
+        background-color: rgba(128, 128, 128, 0.288);
+      }
+    </style>
   </head>
-  <body>
-    <nav>
 
-    
-    </ul>
 
-    <li>
-      <a href="index.html" title="home page">Home</a>
-    </li>
-    <li>
-        <a href="#aboutme" title="About page">About me</a>
-    </li>
-    <li>
-       <a href="#contactme" title="Contact page">Contact</a>
-    </li>
-    <li>
-      <a href="#skills" title="My skills page">Skills</a>
-   </li>
-   <li>
-    <a href="#portfolio" title="Portfolio page">Portfolio</a>
+ <body>   <!-----------------------body ---------------------->
+
+
+
+
+<!-- header sction start here -->
+    <header>
+<!-- navsction start here -->
+
+  <nav>
+
+  
+  <ul>
+
+  <li>
+    <a href="index.html" title="home page">Home</a>
+  </li>
+  <li>
+      <a href="#aboutme" title="About page">About me</a>
+  </li>
+  <li>
+     <a href="#contactme" title="Contact page">Contact</a>
+  </li>
+  <li>
+    <a href="#skills" title="My skills page">Skills</a>
  </li>
-    
-  </ul>
-    
-
-    
-    </nav>
-<header>
-          <h1>Shohel Alom</h1>
-          <em> <p>Web developer from Anisul Islam Sir</p></em>
-          <img src="image.png" alt="Shohel alom" height="150">
-          <hr>
-</header>
-
-
-
-<!-- another sction start here -->
-
-
- <!-- another sction start here -->
-
-  <!-- another sction start here -->
-
-<section id="adoutme">
-  <h2> About Me</h2>
-          <p><strong>Experience : 5 </strong> years of experience in web development</p>
-          <p><strong>Education : SSC </strong> at  Shukurjan-Zinnat Ali Adarshaw Uccha Biddalaya</p>
-</section>
-
-
-<!-- another sction start here -->
-
-<!-- another sction start here -->
-
-<!-- another sction start here -->
-<section id="skills">
-  <h2>Skills</h2>
-
-  <table border="1" cellpadding="4" cellspacing="0">
-    <thead>
-      <th>Experience</th>
-      <th>Exper: Level</th>
-    </thead>
-    
-    <tbody>
-      <tr>
-        <td>HTML</td>
-        <td>Expert</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>Expert</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>basic</td>
-      </tr>
-    </tbody>
+ <li>
+  <a href="#portfolio" title="Portfolio page">Portfolio</a>
+</li>
   
-  </table>
-</section>
-
-<!-- another sction start here -->
-
-<!-- another sction start here -->
-
-<!-- another sction start here -->
-
-
-
-
-
+</ul>
   
-<section id="portfolio">
-  <h2>Contact me</h2>
+  </nav>
 
-  <a target="_blank" href="https://glittery-clafoutis-2c22b6.netlify.app/">Portfolio Web Site</a>
+ <h1>Shohel Alom</h1>
+      <em> <p>Web developer from Anisul Islam Sir</p></em>
+    <img src="image.png" alt="Shohel alom"  height="150">
+      <hr>
+    </header>
 
-<form action="">
+
+<main>
+   <!-- About Me sction start here -->
+
+   <section id="aboutme">
+    <h2> About Me</h2>
+            <p><strong>Experience : 5 </strong> years of experience in web development</p>
+            <p><strong>Education : SSC </strong> at  Shukurjan-Zinnat Ali Adarshaw Uccha Biddalaya</p>
+     </section>
+  
+  
+  
+  <!-- skills  sction start here -->
+    <section id="skills">
+    <h2>Skills</h2>
+  
+    <table border="1" cellpadding="4" cellspacing="0">
+      <thead>
+        <th>Experience</th>
+        <th>Exper: Level</th>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td rowspan="2">Expert</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>basic</td>
+        </tr>
+      </tbody>
+    
+    </table>
+
+ <div class="skillsProgress">
+  <h3>Skill Progress</h3>
   <div>
-    <label for="name"><strong>Name:</strong></label><input required id="name" name="name" type="text" >
+    <label for="htmlProgress">HTML:</label>
+    <progress id="htmlProgress" value="90" max="100" >90%</progress>
+  </div>
+  <div>
+    <label for="cssProgress">CSS:</label>
+    <progress id="cssProgress" value="75" max="100" >75%</progress>
+  </div>
+  <div>
+    <label for="JavaScriptProgress">JavaScript:</label>
+    <progress id="JavaScriptProgress" value="30" max="100" >30%</progress>
+  </div>
+
  </div>
+
  <div>
-  <label for="email"><strong>Email:</strong></label><input required id="email" name="email" type="email" >
+  <h3>Experience Level</h3>
+  <div>
+    <label for="Experience">Experience:</label>
+    <meter id="Experience" value="50" max="100" >50%</meter>
+  </div>
  </div>
- <div>
-  <label for="message"><strong>Message:</strong></label><textarea cols="20" rows="10" name="message" id="message"></textarea>
- </div>
-
- <button type="submit">submit</button>
- <button type="reset">Clear</button>
-</form>
 
 
 
+    </section>
+  
+  
+  <!-- portfolio sction start here -->
+   <section id="project">
+    <h2>Project</h2>
+    <ol type="1">
+      <li> <a target="_blank" href="https://glittery-clafoutis-2c22b6.netlify.app/">Portfolio Web Site</a></li> 
+      <li> <a target="_blank" href="https://glittery-clafoutis-2c22b6.netlify.app/">Portfolio Web Site</a></li> 
+      <li> <a target="_blank" href="https://glittery-clafoutis-2c22b6.netlify.app/">Portfolio Web Site</a></li> 
+    </ol>
+    </section>
+
+    <video width="400"  autoplay muted loop >
+      <source src="small.mp4" type="video/mp4">
+    </video>
 
 
   
+  
+   <!-- portfolio sction start here -->
+   <section id="contactme">
+    <h2>Contact me</h2> 
+
    
+  
+ <form action="https://formspree.io/f/xqazzlzq" method="POST">
+
+       <div>
+         <label for="name"><strong>Name:</strong></label>
+         <input required id="name" name="name" type="name" >
+      </div>
+
+
+      <div>
+        <label for="email"><strong>Email:</strong></label>
+        <input required id="email" name="email" type="email" >
+      </div>
+
+
+      <div>
+        <label for="ages"><strong>Ages:</strong></label>
+        <input required id="ages" name="ages" type="number" min="18" max="50" >
+     </div>
+
+
+     <div>
+      <label for="website"><strong>Website:</strong></label>
+      <input required id="website" name="website" type="url" pattern="http?://.+">
+     </div>
+
+
+     <!-- <div>
+      <label for="image"><strong>Upload image:</strong></label><input required id="image" name="image" type="file" accept="image/*">
+     </div> -->
+
+
+     <div>
+      <label for="subject"><strong>Subject:</strong></label>
+          <select name="subject" id="subject">
+             <option value="feedback">Feedback</option>
+             <option value="inquiry">Inquiry</option>
+             <option value="job opportunity">Job opportunity</option>
+
+         </select>
+    </div>
 
 
 
+      <div>
+        <label for="message"><strong>Message:</strong></label>
+        <textarea cols="20" rows="10" name="message" id="message"></textarea>
+      </div>
+      
+
+     
+  
+       <button type="submit">submit</button>
+       <button type="reset">Clear</button>
+  </form>
+
+   </section>
 
 
-</section>
-
-<!-- another sction start here -->
-
-
-<!-- another sction start here -->
+</main>
+ 
 
 
-<!-- another sction start here -->
-
-
-
-<footer id="contactme">
+<!-- Contact Me sction start here -->
+  <footer id="footer">
   <p>Copyright reserved by &copy; Shohel Alom</p>
   <a href="tel:01928935135">Call me</a>
   <a href="mailto:shohel11999khan@gmail.com">Email me</a>
-</footer>
+  <h3>Follow me</h3>
+  <ul>
+    <li>
+      <a href="https://www.facebook.com/Mohammad.sohel112" target="_blank">
+        <i class="ri-facebook-circle-fill"></i>
+        Facebook 
+      </a>
+
+    </li>
+
+    <li>
+      <a href="https://www.facebook.com/Mohammad.sohel112" target="_blank">
+        <i class="ri-youtube-fill"></i>
+        Youtube
+      </a>
+
+    </li>
+
+
+    <li>
+      <a href="https://github.com/MohammadShohelhan/hero-programing.git " target="_blank">
+        <i class="ri-github-fill"></i>
+        GitHub
+      </a>
+
+    </li>
+  </ul>
+
+
+  <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58377.129783874436!2d90.22020881782727!3d23.86937665993144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755ebd3d6df9569%3A0x277b3819d4da3e91!2sSavar!5e0!3m2!1sen!2sbd!4v1719210125638!5m2!1sen!2sbd" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  </footer>
 
   
    
     <script type="" src="script.js"></script>
   </body>
 </html>
+
